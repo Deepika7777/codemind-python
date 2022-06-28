@@ -1,11 +1,12 @@
 n=int(input())
-p=1
-sq=n*n
-temp=n
-while(n!=0):
+t=n
+l=0
+while(n>0):
+    l+=1
     n=n//10
-    p=p*10
-if(sq%p==temp):
-    print("Automorphic Number")
+n=t*t
+n=n%(pow(10,l))
+if(t==n):
+    print('Automorphic Number')
 else:
-    print("Not an Automorphic Number")
+    print('Not an Automorphic Number')
