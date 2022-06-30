@@ -1,17 +1,17 @@
 n=int(input())
-sq=n*n
-rev=0
-yrs=0
-while(n!=0):
-    d=n%10;
+s=n*n
+sum1=0
+sum2=0
+while(n>0):
+    w=n%10
+    sum1=sum1*10+w
     n=n//10
-    rev=rev*10+d
-    qs=rev*rev
-while(qs!=0):
-    s=qs%10
-    qs=qs//10
-    yrs=yrs*10+s
-if(sq==yrs):
+s1=sum1*sum1
+while(s1>0):
+    a=s1%10
+    sum2=sum2*10+a
+    s1=s1//10
+if(s==sum2):
     print("True")
 else:
     print("False")
